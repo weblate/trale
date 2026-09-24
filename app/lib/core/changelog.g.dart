@@ -10,6 +10,11 @@ part of 'changelog.dart';
 const Changelog changelog = Changelog(<ChangelogEntry>[
   ChangelogEntry(
     version: 'Unreleased',
+    sections: <ChangelogSection, List<String>>{
+      ChangelogSection.bugfix: <String>[
+        'Fixed the chart not updating right away after changing the unit',
+      ],
+    },
   ),
   ChangelogEntry(
     version: '1.4.1',
